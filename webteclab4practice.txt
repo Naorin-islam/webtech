@@ -1,0 +1,415 @@
+1.print hello,world!
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hello World Example</title>
+</head>
+<body>
+  <h1>Hello World Example</h1>
+  <p id="output">The message will appear here.</p>
+
+  <!-- Link to JavaScript file -->
+  <script src="labwtp.js"></script>
+</body>
+</html>
+
+// Print message to console
+console.log("Hello, World!");
+
+// Display message on the page
+document.getElementById("output").textContent = "Hello, World!";
+
+2.Variable Declaration and Assignment
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Variable Example</title>
+</head>
+<body>
+  <h1>Variable Declaration Example</h1>
+  <p id="output">The message will appear here.</p>
+
+  <!-- Link to JavaScript -->
+  <script src="labwtp.js"></script>
+</body>
+</html>
+
+// Variable Declaration and Assignment
+var name = "Naorin";
+var age = 23;
+
+// Print to console
+console.log("My name is " + name + " and I am " + age + " years old.");
+
+// Print to the web page
+document.getElementById("output").textContent =
+  "My name is " + name + " and I am " + age + " years old.";
+
+3.Simple arithmetic
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basic JavaScript Example</title>
+</head>
+<body>
+  <h1>JavaScript Output</h1>
+
+  <p id="sumOutput"></p>
+  <p id="oddEvenOutput"></p>
+
+  <!-- Link to the JavaScript file -->
+  <script src="labwtp.js"></script>
+</body>
+</html>
+
+// Simple Arithmetic
+var num1 = 5;
+var num2 = 10;
+var sum = num1 + num2;
+
+console.log("The sum of " + num1 + " and " + num2 + " is " + sum);
+document.getElementById("sumOutput").textContent =
+  "The sum of " + num1 + " and " + num2 + " is " + sum;
+
+
+// Checking Odd or Even
+var number = 7;
+
+if (number % 2 === 0) {
+  console.log(number + " is even.");
+  document.getElementById("oddEvenOutput").textContent =
+    number + " is even.";
+} else {
+  console.log(number + " is odd.");
+  document.getElementById("oddEvenOutput").textContent =
+    number + " is odd.";
+}
+
+
+4.Temperature Conversion: Celsius to Fahrenheit
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temperature Conversion</title>
+</head>
+<body>
+  <h1>Celsius to Fahrenheit Conversion</h1>
+
+  <p id="output"></p>
+
+  <!-- Link to the JavaScript file -->
+  <script src="labwtp.js"></script>
+</body>
+</html>
+
+// Temperature Conversion: Celsius to Fahrenheit
+var celsius = 25;
+var fahrenheit = (celsius * 9/5) + 32;
+
+// Output to console
+console.log(celsius + "°C is equal to " + fahrenheit + "°F");
+
+// Output to webpage
+document.getElementById("output").textContent =
+  celsius + "°C is equal to " + fahrenheit + "°F";
+
+5.Simple Calculator
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Calculator</title>
+</head>
+<body>
+  <h1>Simple Calculator Output</h1>
+
+  <p id="add"></p>
+  <p id="sub"></p>
+  <p id="mul"></p>
+  <p id="div"></p>
+
+  <!-- Link to JavaScript file -->
+  <script src="labwtp.js"></script>
+</body>
+</html>
+
+// Simple Calculator
+var num1 = 10;
+var num2 = 5;
+
+var addition = num1 + num2;
+var subtraction = num1 - num2;
+var multiplication = num1 * num2;
+var division = num1 / num2;
+
+// Console Output
+console.log("Addition: " + addition);
+console.log("Subtraction: " + subtraction);
+console.log("Multiplication: " + multiplication);
+console.log("Division: " + division);
+
+// Display on Webpage
+document.getElementById("add").textContent = "Addition: " + addition;
+document.getElementById("sub").textContent = "Subtraction: " + subtraction;
+document.getElementById("mul").textContent = "Multiplication: " + multiplication;
+document.getElementById("div").textContent = "Division: " + division;
+
+6.Finding the largest number
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Largest Number</title>
+</head>
+<body>
+  <h1>Largest Number Result</h1>
+
+  <p id="largest"></p>
+
+  <!-- Link to JavaScript file -->
+  <script src="labwtp.js"></script>
+</body>
+</html>
+
+// Simple Calculator on two numbers
+var num1 = 10;
+var num2 = 5;
+// Finding the largest among three numbers
+var num3 = 8;
+var largest = num1;
+
+if (num2 > largest) {
+  largest = num2;
+}
+if (num3 > largest) {
+  largest = num3;
+}
+console.log("The largest number is: " + largest);
+document.getElementById("largest").textContent =
+  "The largest number is: " + largest;
+
+7.Loop through Numbers (1 to 10) and Factorial of a Number
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loop & Factorial</title>
+</head>
+<body>
+  <h1>Loop 1–10 and Factorial Result</h1>
+
+  <p id="loopOutput"></p>
+  <p id="factorialOutput"></p>
+
+  <!-- Link to JavaScript file -->
+  <script src="labwtp.js"></script>
+</body>
+</html>
+
+// Loop through Numbers (1 to 10)
+var numbers = "";
+for (var i = 1; i <= 10; i++) {
+  console.log(i);
+  numbers += i + " ";
+}
+
+document.getElementById("loopOutput").textContent =
+  "Numbers from 1 to 10: " + numbers;
+
+
+// Factorial of a Number
+var num = 5;
+var factorial = 1;
+
+for (var i = num; i > 0; i--) {
+  factorial *= i;
+}
+
+console.log("Factorial of " + num + " is: " + factorial);
+
+document.getElementById("factorialOutput").textContent =
+  "Factorial of " + num + " is: " + factorial;
+
+8.Reverse String
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reverse String Example</title>
+</head>
+<body>
+  <h1>Reversed String</h1>
+  <p id="output">The reversed string will be displayed here.</p>
+ 
+  <script src="lab4p.js"></script> <!-- Link to your JS file -->
+</body>
+</html>
+// Declare the string to reverse
+var str = "JavaScript";
+ 
+// Initialize an empty string to store the reversed string
+var reversedStr = "";
+ 
+// Loop through the string starting from the last character
+for (var i = str.length - 1; i >= 0; i--) {
+  reversedStr += str[i]; // Append each character to reversedStr
+}
+ 
+// Output the reversed string to the page
+document.getElementById("output").textContent = "Reversed string is: " + reversedStr;
+
+9.Sum of array elements 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>sum of array elements</title>
+</head>
+<body>
+  <h1>Sum</h1>
+  <p id="output">Output:</p>
+ 
+  <script src="labwtp.js"></script> <!-- Link to your JS file -->
+</body>
+</html> 
+
+// Declare the string to reverse
+var arr = [1,2,3,4,5];
+ 
+// Initialize an empty string to store the reversed string
+var sum = 0;
+ 
+// Loop through the string starting from the last character
+for (var i = 0; i <arr.length; i++) {
+ sum += arr[i]; // Append each character to reversedStr
+}
+ 
+// Output the reversed string to the page
+document.getElementById("output").textContent = "Sum is: " + sum;
+
+10.prime number checker
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Number Checker</title>
+</head>
+<body>
+    <h2>Prime Number Checker</h2>
+    <script src="labwtp.js"></script>
+</body>
+</html>
+
+var num = 29;
+var isPrime = true;
+
+for (var i = 2; i < num; i++) {
+    if (num % i === 0) {
+        isPrime = false;
+        break;
+    }
+}
+
+if (isPrime) {
+    console.log(num + " is a prime number.");
+} else {
+    console.log(num + " is not a prime number.");
+}
+
+11.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Manipulation</title>
+</head>
+<body>
+    <h2>Array Manipulation Output (Check Console)</h2>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+12.Array Manipulation
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Manipulation</title>
+</head>
+<body>
+    <h2>Array Manipulation Result:</h2>
+
+    <p id="result"></p>
+
+    <script src="labwtp.js"></script>
+</body>
+</html>
+
+// Initial array
+var arr = [1, 2, 3, 4, 5];
+
+// Add an element to the end
+arr.push(6);
+
+// Remove the first element
+arr.shift();
+
+// Display modified array on webpage
+document.getElementById("result").innerHTML = "Modified array: " + arr;
+
+13.Object Example
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Example</title>
+</head>
+<body>
+
+    <h2>Simple Object Example</h2>
+
+    <p id="name"></p>
+    <p id="age"></p>
+
+    <script src="labwtp.js"></script>
+</body>
+</html>
+
+// Simple object
+var person = {
+    name: "niru",
+    age: 23
+};
+
+// Display on webpage
+document.getElementById("name").innerHTML = "Name: " + person.name;
+document.getElementById("age").innerHTML = "Age: " + person.age;
+
+// Also print in console
+console.log("Name: " + person.name);
+console.log("Age: " + person.age);
+
+
+
